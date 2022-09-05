@@ -114,6 +114,12 @@ section{
 .about{
     font-family: 'Poppins' sans-serif;
 }
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .about .title{
     font-family: 'Ubuntu';
@@ -144,6 +150,39 @@ section{
     color: rgb(48, 110, 146);
     padding: 5px;
     transform: translateX(-50%);
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: rgb(48, 110, 146);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(48, 110, 146);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(48, 110, 146);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: rgb(48, 110, 146);
+    background: none;
 }
 .about .about-content .left img{
     width: 400px;
@@ -181,10 +220,11 @@ section{
         background: #111;
         padding-top: 80px;
         text-align: center;
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
     }
     .navbar .menu li{
         display: block;
+        
     }
     .navbar .menu li a{
         display: inline-block;
@@ -207,10 +247,7 @@ section{
         font-size: 60px;
     }
     .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a:hover{
-        font-size: 20px;
+        font-size: 32;
     }
 }
 @media (max-width: 500px){
