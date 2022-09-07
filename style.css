@@ -255,6 +255,9 @@ section{
         justify-content: center;
         margin: 0 auto 60px;
     }
+    .about .about-content .right{
+        flex: 100%;
+    }
 }
 @media (max-width: 690px){
     .home .home-content .text-2{
