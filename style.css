@@ -106,22 +106,11 @@
     cursor: pointer;
     display: none;
 }
-
-/*  sessão sobre  */
+/*  All similar codes  */
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
-}
-.about .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about .title{
+section .title{
     font-family: 'Ubuntu';
     text-align: center;
     font-size: 40px;
@@ -130,7 +119,7 @@ section{
     padding-bottom: 20px;
     position: relative;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -140,8 +129,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Who am I";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -150,6 +138,22 @@ section{
     color: rgb(48, 110, 146);
     padding: 5px;
     transform: translateX(-50%);
+}
+/*  sessão sobre  */
+
+
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content, .services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .title::after{
+    content: "Who am I";
 }
 .about .about-content .left{
     width: 45%;
@@ -189,6 +193,10 @@ section{
     height: 400px;
     object-fit: cover;
     border-radius: 6px;
+}
+/*  Sessão  Services */
+.services .title::after{
+    content: "what we offer";
 }
 
 /*  responsivo  */
