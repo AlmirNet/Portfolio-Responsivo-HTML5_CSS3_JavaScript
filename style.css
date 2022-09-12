@@ -100,7 +100,8 @@
     background: none;
 }
 /*  Menu mobile  */
-.menu-btn{
+
+.menu-btn {
     color: #fff;
     font-size: 26px;
     cursor: pointer;
@@ -139,18 +140,16 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-/*  sessão sobre  */
-
-
-.about, .services{
+.about, .services, .skills{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, .services .serv-content{
+.about .about-content, .services .serv-content, .skills .skill-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+/*  sessão sobre  */
 
 .about .title::after{
     content: "Who am I";
@@ -206,12 +205,61 @@ section .title::after{
     background: #111;
     content: "what we offer";
 }
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: rgb(48, 110, 146);
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card ion-icon{
+    font-size: 70px;
+    color: rgb(48, 110, 146);
+}
+.services .serv-content .card:hover ion-icon{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.services .serv-content .card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+/*  Specialty  */
+.skills .title::after{
+    content: "What I do";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
 
 /*  responsivo  */
 @media (max-width: 1300px){
     .navbar .max-width{
         margin-left: 0;
     }
+    .services .serv-content .card{
+        width: 100%;
 }
 @media (max-width: 1104px){
     .about .about-content .left img{
@@ -281,6 +329,9 @@ section .title::after{
     }
     .home .home-content .text-3{
         font-size: 32;
+    }
+    .services .serv-content .card{
+        width: 100%;
     }
 }
 @media (max-width: 500px){
