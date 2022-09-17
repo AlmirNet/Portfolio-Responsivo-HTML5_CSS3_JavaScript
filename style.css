@@ -376,6 +376,30 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .left.row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .left.row.info{
+    margin-left: 30px;
+}
+.contact .contact-content .left .row ion-icon{
+    font-size: 25px;
+    color:rgb(48, 110, 146);
+}
+
 
 
 /*  responsivo  */
