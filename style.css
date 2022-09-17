@@ -143,7 +143,7 @@ section .title::after{
 .about, .services, .skills, .teams, .contact{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, .services .serv-content, .skills .skill-content, .contact, .contact-content{
+.about .about-content, .services .serv-content, .skills .skill-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -387,15 +387,21 @@ section .title::after{
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .left.row{
+.contact .contact-content .row{
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .left.row.info{
+.contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .left .row ion-icon{
+.contact .contact-content .row .info .head{
+    font-weight: 500px;
+}
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+.contact .contact-content .row ion-icon{
     font-size: 25px;
     color:rgb(48, 110, 146);
 }
