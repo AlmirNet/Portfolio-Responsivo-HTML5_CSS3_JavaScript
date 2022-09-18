@@ -405,8 +405,29 @@ section .title::after{
     font-size: 25px;
     color:rgb(48, 110, 146);
 }
-
-
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .fields,
+.contact .right form .fields .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+}
+.contact .right form .fields input,
+.contact .right form .texrarea textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: 0 15px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
 
 /*  responsivo  */
 @media (max-width: 1300px){
