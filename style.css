@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -372,7 +375,9 @@ section .title::after{
     background: rgb(48, 110, 146)!important;
 }
 /*  sessão contact  */
-
+.contact .title::after{
+    content: "Contact us";
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
