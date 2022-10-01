@@ -118,6 +118,12 @@ html{
     bottom: 30px;
     text-align: center;
     line-height: 45px;
+    color: #fff;
+    background: rgb(48, 110, 146);
+    border-radius: 6px;
+    font-size: 30px;
+    z-index: 9999;
+    cursor: pointer;
 }
 /*  All similar codes  */
 section{
