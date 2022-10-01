@@ -110,6 +110,15 @@ html{
     cursor: pointer;
     display: none;
 }
+.scroll-up-btn{
+    position: fixed;
+    width: 42px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+}
 /*  All similar codes  */
 section{
     padding: 100px 0;
