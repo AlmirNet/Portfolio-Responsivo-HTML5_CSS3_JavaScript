@@ -112,19 +112,28 @@ html{
 }
 .scroll-up-btn{
     position: fixed;
-    width: 42px;
+    width: 41px;
     height: 45px;
     right: 30px;
-    bottom: 30px;
+    bottom: 10px;
     text-align: center;
-    line-height: 45px;
+    line-height: 50px;
     color: #fff;
     background: rgb(48, 110, 146);
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;
-    cursor: pointer;
+    cursor: pointer; 
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
 /*  All similar codes  */
 section{
     padding: 100px 0;
